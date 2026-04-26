@@ -1,0 +1,36 @@
+<svg
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background -->
+  <rect width="512" height="512" rx="120" fill="#0F172A" />
+
+  <!-- Clipboard -->
+  <rect x="140" y="110" width="232" height="300" rx="28" fill="#1E293B" />
+
+  <!-- Top clip -->
+  <rect x="200" y="80" width="112" height="50" rx="16" fill="#3B82F6" />
+
+  <!-- Check items -->
+  <circle cx="190" cy="190" r="10" fill="#3B82F6" />
+  <rect x="220" y="182" width="120" height="12" rx="6" fill="#94A3B8" />
+
+  <circle cx="190" cy="240" r="10" fill="#3B82F6" />
+  <rect x="220" y="232" width="150" height="12" rx="6" fill="#94A3B8" />
+
+  <circle cx="190" cy="290" r="10" fill="#3B82F6" />
+  <rect x="220" y="282" width="100" height="12" rx="6" fill="#94A3B8" />
+
+  <!-- Check badge -->
+  <circle cx="330" cy="340" r="28" fill="#22C55E" />
+  <path
+    d="M318 340L326 348L342 332"
+    stroke="white"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
