@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f5f4f0;
+  margin: 0;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: #f5f4f0;
+}
+.app-header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.app-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px; 
+}
+
+.app-date {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  border: 1px solid #ebebeb;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #979797;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+/* Add row */
+.form-control {
+  height: 42px;
+  border-radius: 10px !important;
+  border: 1px solid #e0e0e0 !important;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(83, 74, 183, 0.15) !important;
+  border-color: #534AB7 !important;
+}
+
+.btn-primary {
+  background-color: #534AB7 !important;
+  border-color: #534AB7 !important;
+  border-radius: 10px !important;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: #3C3489 !important;
+  border-color: #3C3489 !important;
+}
+
+/* Filter buttons */
+.filter-btn {
+  padding: 5px 16px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #888;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover {
+  background: #f0f0f0;
+}
+
+.filter-btn.active {
+  background: #dad7fd;
+  color: #272066;
+  border-color: #a09ae4;
+  font-weight: 500;
+}
+
+.clear-btn {
+  color: #e24b4a;
+  border-color: #f7c1c1;
+}
+
+.clear-btn:hover {
+  background: #fcebeb;
+  color: #a32d2d;
+}
+
+/* Task list */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-card {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: opacity 0.2s;
+}
+
+.task-card.done {
+  opacity: 0.7;
+}
+
+/* Check circle */
+.check-circle {
+  width: 24px;
+  height: 24px;
+  min-width: 20px;
+  border-radius: 50%;
+  border: 2px solid #d0d0d0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: all 0.15s;
+}
+
+.check-circle:hover {
+  border-color: #18926b;
+}
+
+.check-circle.checked {
+  background: #1D9E75;
+  border-color: #1D9E75;
+}
+
+.check-circle.checked::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 8px;
+  height: 12px;
+  border: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+
+/* Task text */
+.task-text {
+  display: block;
+  font-size: 16px;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.task-card.done .task-text {
+  text-decoration: line-through;
+  color: #a3a3a3;
+}
+
+.task-date {
+  display: block;
+  font-size: 11px;
+  color: #a3a3a3;
+  margin-top: 2px;
+}
+
+/* Delete button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #a09e9e;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.15s;
+}
+
+.delete-btn:hover {
+  color: #e24b4a;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 2.5rem;
+  color: #bbb;
+  font-size: 14px;
+  border: 1px dashed #e0e0e0;
+  border-radius: 12px;
+  background: #fafafa;
+}
